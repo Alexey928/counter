@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.counterContainer{
+    display: flex;
+
+}
+.App{
+    display: flex;
+    flex-direction: column;
+}
+.App>div{
+    /*margin-top: 20px;*/
+}
+.menu .isdone{
+    background-color: #03fded;
+
+}
+.settings input{
+    max-width: 60px;
+    background-color: antiquewhite;
+}
+.settings{
+    margin-left: 5px;
+    display: flex;
+    background-color: grey;
+
+
+}
+.App{
+    position: relative;
+
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+.menu{
+    margin-bottom: 30px;
+}
+.App-container{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: grey;
+
+    margin: 10px auto;
+}
+.counter {
+
+    background-color: rgba(134, 158, 217, 0.55);
+    border-radius: 8px;
+    margin: 0 5px 20px 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.display{
+    color: blue;
+    font-size: 25px;
+    margin-top: 10px;
+    width: 120px;
+    /*padding-top: 5px;*/
+    background-color:antiquewhite;
 }
+.display > span{
+    font-weight: bold;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    font-size: 14px;
+    color: red;
+    /*position: absolute;*/
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.display > span+span{
+    margin-left: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.remuve-counter{
+    font-weight: bold;
+    color: crimson;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: rgba(2, 255, 62, 0.87);
+    margin-right: 10%;
 }
+.countInterface{
+    background-color: rgba(64, 68, 236, 0.77);
+    border-radius: 5px;
+    border: 2px solid grey;
+}
+.menu button{
+    background-color: #05e76c;
+    padding: 2px;
+    border-radius: 5px;
+}
+.menu button:last-child{
+    background-color: #e9ef99;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
 }
